@@ -235,7 +235,7 @@ def policy_iteration(env, gamma=0.99, theta=1e-8):
         if np.array_equal(np.argmax(policy, axis=1),
                           np.argmax(new_policy, axis=1)):
             print("Policy converged!")
-            print(f"Total policy iterations: {iteration}")
+            print(f"Total Policy Iterations: {iteration}")
             break
 
         policy = new_policy
